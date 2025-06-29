@@ -73,7 +73,7 @@ local Button = PlayerTab:CreateButton({
 local DaHoodTab = Window:CreateTab("Da Hood", nil) -- Title, Image
 
 local Button = DaHoodTab:CreateButton({
-   Name = "Lock On",
+   Name = "Lock On (C)",
    Callback = function()
 getgenv().MTXClient_Settings = {
     ["Aim"] = {
