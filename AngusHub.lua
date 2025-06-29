@@ -69,39 +69,3 @@ local Button = PlayerTab:CreateButton({
    loadstring(game:HttpGet("https://raw.githubusercontent.com/ozashub/FAKE/refs/heads/main/Protected_8087317323440302.lua"))()
    end,
 })
-
-local DaHoodTab = Window:CreateTab("Da Hood", nil) -- Title, Image
-
-local Button = DaHoodTab:CreateButton({
-   Name = "Lock On (C)",
-   Callback = function()
-getgenv().MTXClient_Settings = {
-    ["Aim"] = {
-       ["AimPart"] = "Head",
-       ["AimlockKey"] = "c",
-       ["AimRadius"] = 35,
-    }, 
-
-    ["Verifications"] = {
-        ["ThirdPerson"] = true,
-        ["FirstPerson"] = true,
-        ["TeamCheck"] = false,
-
-        ["K_O"] = true,
-        ["Grabing"] = true,
-    },
-
-    ["Utility"] = {
-        ["NoSlow"] = true,
-        ["AntiGroundShots"] = true,
-    },
-
-    ["Predict"] = {
-        ["PredictMovement"] = false,
-        ["PredictionVelocity"] = 7,
-    },
-};
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/MTXClient/MTX-Client/refs/heads/main/Games/DH.lua"))()
-   end,
-})
