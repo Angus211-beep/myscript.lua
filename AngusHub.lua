@@ -75,7 +75,7 @@ local DaHoodTab = Window:CreateTab("Da Hood", nil) -- Title, Image
 local Button = DaHoodTab:CreateButton({
    Name = "Lock On",
    Callback = function()
-   getgenv().MTXClient_Settings = {
+getgenv().MTXClient_Settings = {
     ["Aim"] = {
        ["AimPart"] = "Head",
        ["AimlockKey"] = "c",
@@ -101,5 +101,7 @@ local Button = DaHoodTab:CreateButton({
         ["PredictionVelocity"] = 7,
     },
 };
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MTXClient/MTX-Client/refs/heads/main/Games/DH.lua"))()
    end,
 })
